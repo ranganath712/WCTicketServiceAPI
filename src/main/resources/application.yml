@@ -1,0 +1,26 @@
+spring:
+    datasource:
+        password: dragon8Ra1$
+        url: jdbc:mysql://localhost:3306/irctc_db
+        username: root
+        driver: com.mysql.cj.jdbc.Driver
+       
+    mvc:
+        pathmatch:
+          matching-strategy: ant-path-matcher
+    jpa:
+        hibernate:
+          ddl-auto: update
+        show-sql: true
+    application:
+      name: WC-TicketServiceAPI
+        
+springdoc:
+    swagger-ui:
+      path: swagger-ui.html
+server:
+  port: 8082
+tburls:
+  urls:
+    'bookPayUrl': 'http://localhost:8081/payments/pay'
+    
